@@ -17,10 +17,10 @@
     display: flex;
     width: 900px;
     justify-content: space-around;
-    flex: 1;
     margin-right: 5px;
     margin-top: 5px;
     padding: 10px;
+    flex-shrink: 1;
 
 }
 
@@ -42,10 +42,10 @@
 .home {
     display: flex;
     width: 900px;
-    flex: 1;
     justify-content: space-evenly;
     margin-top: 60px;
     margin-bottom: 60px;
+    flex-shrink: 1;
 
 }
 
@@ -54,9 +54,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 275px;
-    border: lightcoral 2px solid;
     gap: 5px;
+    flex-shrink: 1;
 }
+
 
 .sign-up {
     background-color: #3882F6;
@@ -65,52 +66,74 @@
     color: white;
     width: 80px;
     padding: 5px;
+    flex-shrink: 1;
 }
 
 .right-box {
     border: 2px lightcoral solid;
-    width: 300px;
+    width: 150px;
+    flex-shrink: 1;
+    margin-right: 20px;
 }
 
 
 .gallery-container {
     background-color: white;
+    display: flex;
+    flex-direction: column;
     height: 250px;
-    text-align: center;
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 2rem;
+}
+
+.gallery-container > * {
+    flex-shrink: 1;
+}
+.title-gallery {
+    margin-top: 40px;
 }
 
 .gallery-images {
     display: flex;
-    flex-grow: 1;
-    height: 80px;
-    justify-content: center;
-    gap: 2rem;
-    margin: 30px;
-    margin-top: 50px;
+    width: 700px;
+    height: 250px;
 }
 
-/* .gallery-images > * {
-    border: 1px #1f2937 solid;
-    border-radius: 10px;
-    padding: 40px;
-} */
+.image-containers {
+    display: flex;
+    width: 700px;
+    height: 220px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 
 .image-container {
-    max-width: 200px
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .img {
+    flex-shrink: 1;
     border: 4px #1f2937 solid;
     border-radius: 10px;
     padding: 40px;
     width: 120px;
+    height: 120px;
     
 }
 
-.image-container.text {
-    max-width: 20px;
-    flex-wrap: wrap;
+.image-container .text {
+    margin-top: 5px;
+    flex-shrink: 1;
+    border: lightcoral 2px solid;
 }
 
 .quote-container {
@@ -130,7 +153,6 @@
     width: 750px;
     height: 200px;
     flex-wrap: wrap;
-    border: lightcoral 2px solid;
 }
 
 .quote > * {
