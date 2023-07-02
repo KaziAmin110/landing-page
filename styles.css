@@ -27,6 +27,7 @@
 .header-links {
     display: flex;
     gap: 2rem;
+    margin-left: 250px;
 }
 
 .home-container {
@@ -58,7 +59,12 @@
 }
 
 .sign-up {
-    width: 100px;
+    background-color: #3882F6;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: white;
+    width: 80px;
+    padding: 5px;
 }
 
 .right-box {
@@ -79,10 +85,9 @@
     flex-grow: 1;
     height: 80px;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
     margin: 30px;
-    
+    margin-top: 50px;
 }
 
 /* .gallery-images > * {
@@ -91,11 +96,123 @@
     padding: 40px;
 } */
 
-.first-image {
+.image-container {
+    max-width: 200px
+}
+
+.img {
+    border: 4px #1f2937 solid;
+    border-radius: 10px;
+    padding: 40px;
+    width: 120px;
+    
+}
+
+.image-container.text {
+    max-width: 20px;
+    flex-wrap: wrap;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    height: 250px;
+    text-align: center;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    width: 750px;
+    height: 100px;
+    flex-wrap: wrap;
+}
+
+.quote > * {
+    font-size: 24px;
+    flex-shrink: 1;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.quote.text {
+    flex-shrink: 1
+}
+
+.author {
+    align-self: flex-end;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-right: 40px;
+    flex-shrink: 1;
+}
+
+.product-container {
+    background-color: white;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-information{
+    display: flex;
+    flex-shrink: 1;
+    min-width: 800px;
+    min-height: 80px;
+    justify-content: space-around;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.product {
+    background-color: #3882F6;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: white;
+    width: 80px;
+    padding: 5px;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.product-text{
+    padding: 5px;
+    font-size: 15px;
+}
+
+.product-short {
+    padding: 5px;
+    font-size: 12px;
 }
 
 
+.website-footer-container {
+    display: flex;
+    background-color: #1f2937;
+    color: white;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.website-footer {
+    display: flex;
+    justify-content: center;
+}
 
 
