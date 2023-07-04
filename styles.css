@@ -156,6 +156,7 @@
     justify-content: center;
     align-items: center;
     
+    
 }
 
 .quote {
@@ -164,12 +165,16 @@
     width: 725px;
     height: 200px;
     flex-wrap: wrap;
+    color: white;
+    background-color: #3882F6;
+    border-radius: 8px;
 }
 
 .quote > * {
     font-size: 24px;
     flex-shrink: 1;
     margin: 20px;
+    padding: 5px;
     flex-wrap: wrap;
 }
 
@@ -180,7 +185,7 @@
 .author {
     align-self: flex-end;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 40px;
     flex-shrink: 1;
 }
